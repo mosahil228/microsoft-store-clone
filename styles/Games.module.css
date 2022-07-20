@@ -1,0 +1,1337 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pushster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pushster&family=Roboto:wght@100&display=swap");
+.backN {
+  display: none;
+}
+
+.backB {
+  display: block;
+}
+
+.header {
+  background-color: #f2f2f2;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  max-width: 1500px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.navbar {
+  font-family: OpenSans, Arial, Helvetica, sans-serif;
+  height: 50px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+  max-width: 1500px;
+  overflow: hidden;
+  z-index: 1000;
+}
+.navbar .navItems {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+.navbar .navItems .leftNav {
+  display: flex;
+  align-items: center;
+}
+.navbar .navItems .leftNav svg {
+  font-size: 2.4rem;
+  margin-right: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  color: #373F45;
+}
+.navbar .navItems .leftNav svg:hover {
+  background-color: #e0dddd;
+  cursor: pointer;
+}
+.navbar .navItems .leftNav .appIcon {
+  width: 20px;
+  height: 20px;
+  color: #3d5a80;
+}
+.navbar .navItems h4 {
+  font-weight: 100;
+  font-size: 1.4rem;
+  padding-left: 1.3rem;
+  color: #111;
+}
+.navbar .rightNav {
+  display: flex;
+  align-items: center;
+}
+.navbar .rightNav a {
+  text-decoration: none;
+  padding: 0 4px;
+  color: #111;
+  font-size: 14px;
+  line-height: 25px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+.navbar .rightNav a:hover {
+  background: #e9e9e6;
+}
+.navbar .midNav .searchIcon {
+  position: absolute;
+  top: 50%;
+  right: 9px;
+  z-index: 1;
+  padding: 6px;
+  width: 27px;
+  height: 27px;
+  transform: translateY(-50%);
+  color: #898f99;
+  font-size: 10px;
+  cursor: pointer;
+}
+.navbar .midNav .searchIcon:hover {
+  background-color: #f5f5f4;
+  border-radius: 3px;
+}
+.navbar .midNav .midItems {
+  position: relative;
+}
+.navbar .midNav .midItems input {
+  border: 1px solid #f5f5f4;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  outline: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 7px 35px 7px 10px;
+  width: 600px;
+  height: 32px;
+  background: #fff;
+  color: #171c25;
+  font-size: 15px;
+}
+.navbar .midNav .midItems input:focus {
+  box-shadow: #3d5a80 0px 1px 1.9px;
+}
+
+.sidebar {
+  position: fixed;
+  background: #f2f2f2;
+  width: 72px;
+  height: 100%;
+  top: 50px;
+  left: auto;
+  z-index: 100;
+}
+.sidebar .sideItems {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.sidebar .sideItems .leftSide2 {
+  padding-bottom: 5.5rem !important;
+}
+.sidebar .sideItems .leftSide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sidebar .sideItems .leftItems2 {
+  background: #f2f2f2 !important;
+}
+.sidebar .sideItems .leftItems2:hover {
+  background: #e9e9e6 !important;
+  cursor: pointer;
+}
+.sidebar .sideItems .leftItems3 a:after {
+  content: "";
+  position: absolute;
+  background-color: #373F45;
+  height: 2.6rem;
+  width: 4px;
+  left: 2px;
+  border-radius: 3rem;
+  transition: 0.3s;
+}
+.sidebar .sideItems .leftItems {
+  background: #fff;
+  width: 63px;
+  height: 63px;
+  margin: 0 1px 5px 1px;
+  border-radius: 6px;
+}
+.sidebar .sideItems .leftItems a {
+  text-decoration: none;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.sidebar .sideItems .leftItems .spanNone {
+  display: none;
+}
+.sidebar .sideItems .leftItems .spanBlock {
+  display: block;
+}
+.sidebar .sideItems .leftItems span {
+  color: grey;
+  font-size: 1rem;
+  padding-top: 0.6rem;
+}
+.sidebar .sideItems .leftItems .leftIcon2 {
+  color: #373F45 !important;
+  font-size: 2.7rem !important;
+}
+.sidebar .sideItems .leftItems .leftIcon4 {
+  color: #373F45 !important;
+}
+.sidebar .sideItems .leftItems .leftIcon3 {
+  font-size: 2.7rem !important;
+}
+.sidebar .sideItems .leftItems .leftIcon {
+  color: grey;
+  font-size: 2.2rem;
+}
+
+.mainContainer {
+  max-width: 1500px;
+  overflow: hidden;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+}
+
+.sSection {
+  margin-bottom: 3rem;
+}
+.sSection .sContainer {
+  margin-left: 72px;
+}
+.sSection .sContainer .sGallery {
+  width: 100%;
+  border-top-left-radius: 1rem;
+  overflow: hidden;
+}
+
+.midContainer {
+  margin: 0 4rem;
+}
+.midContainer .essentialApps3 {
+  background-color: #21d190 !important;
+  background-image: linear-gradient(315deg, #21d190 0%, #bb2fad 74%) !important;
+}
+.midContainer .essentialApps2 {
+  height: 42rem !important;
+  background-color: #7f5a83 !important;
+  background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 96%) !important;
+}
+.midContainer .essentialApps {
+  background-color: #d19847;
+  margin: 4rem 0;
+  background-image: linear-gradient(315deg, #d19847 0%, #b82e1f 74%);
+  width: 100%;
+  height: 48rem;
+  padding: 0 3.7rem;
+  border-radius: 1rem;
+}
+.midContainer .essentialApps .mainEss {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: space-between;
+}
+.midContainer .essentialApps .leftEssItem h3 {
+  color: #fff;
+  font-size: 2.1rem;
+  font-weight: 500;
+  padding-bottom: 1.1rem;
+}
+.midContainer .essentialApps .leftEssItem p {
+  color: #fff;
+  font-size: 1.3rem;
+  max-width: 32.5rem;
+  line-height: 1.8rem;
+  font-weight: lighter;
+  padding-bottom: 3.4rem;
+}
+.midContainer .essentialApps .leftEssItem button {
+  background: rgba(0, 0, 0, 0.1);
+  border: none;
+  outline: none;
+  width: 11rem;
+  height: 3.2rem;
+  color: #fff;
+  border-radius: 0.7rem;
+  transition: 0.3s;
+}
+.midContainer .essentialApps .leftEssItem button:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.06);
+}
+.midContainer .freeApps .filterCollapse {
+  width: 100%;
+  height: 0;
+  background: #fff;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+  box-shadow: rgba(28, 28, 28, 0.07) 0px 0.42623px 1.85246px;
+  border: 1px solid rgb(232, 232, 232);
+}
+.midContainer .freeApps .activeCollapse {
+  transition: all 0.4s ease-in-out;
+  background: #fff;
+  opacity: 1;
+  height: 145px !important;
+  box-shadow: rgba(28, 28, 28, 0.07) 0px 0.42623px 1.85246px;
+  border: 1px solid rgb(232, 232, 232);
+  border-radius: 1rem;
+}
+.midContainer .freeApps .appCard {
+  display: flex;
+  border-radius: 1rem;
+  gap: 1.8rem;
+  justify-content: space-between;
+}
+.midContainer .freeApps .appCard .aCards3 {
+  height: 40rem !important;
+}
+.midContainer .freeApps .appCard .aCards {
+  position: relative;
+  transition: 0.3s ease;
+  width: 100%;
+  height: 34rem;
+  background-color: #fff;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.05), 0px 2px 1px -1px rgba(0, 0, 0, 0.02), 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
+  border: 2px solid transparent;
+  border-radius: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.midContainer .freeApps .appCard .aCards:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.05), 0px 2px 1px -1px rgba(0, 0, 0, 0.02), 0px 8px 3px 0px rgba(0, 0, 0, 0.06);
+}
+.midContainer .freeApps .appCard .aCards .topCardItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60%;
+}
+.midContainer .freeApps .appCard .aCards .topCardItem .cardImg5 {
+  width: 20rem !important;
+  height: 25rem !important;
+}
+.midContainer .freeApps .appCard .aCards .topCardItem .cardImg2 {
+  width: 16rem !important;
+  height: 21rem !important;
+  overflow: hidden !important;
+}
+.midContainer .freeApps .appCard .aCards .topCardItem .cardImg {
+  width: 11rem;
+  height: 11rem;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.midContainer .freeApps .appCard .aCards .topCardItem .cardImg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.midContainer .freeApps .appCard .aCards .botCardItem {
+  height: 40%;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+  display: flex;
+  flex-direction: column;
+}
+.midContainer .freeApps .appCard .aCards .botCardItem .bbItems .xBoxPass {
+  background: #0f7b0f;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  border-radius: 1.6rem;
+  margin-bottom: 4rem;
+}
+.midContainer .freeApps .appCard .aCards .botCardItem .bbItems p {
+  font-size: 1.3rem;
+  position: absolute;
+  bottom: 1rem;
+}
+.midContainer .freeApps .appCard .aCards .botCardItem .bTopItems .rating {
+  display: flex;
+  align-items: center;
+}
+.midContainer .freeApps .appCard .aCards .botCardItem .bTopItems .rating svg {
+  width: 1.5rem;
+  margin-right: 0.5px;
+}
+.midContainer .freeApps .appCard .aCards .botCardItem .bTopItems .rating .ratingNo {
+  position: relative;
+  top: -1px;
+  padding-left: 5px;
+  font-size: 1.2rem;
+  color: grey;
+  font-weight: lighter;
+}
+.midContainer .freeApps .appCard .aCards .botCardItem .bTopItems h4 {
+  font-size: 1.4rem;
+  color: #333333;
+  padding-bottom: 0.9rem;
+}
+.midContainer .freeApps .appCard .aCards .botCardItem .bTopItems p {
+  font-size: 1.2rem;
+  color: grey;
+  font-weight: lighter;
+  padding-bottom: 1.1rem;
+}
+.midContainer .freeApps .appGridcard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.2rem 1.2rem;
+}
+.midContainer .freeApps .appGridcard .aGridcard {
+  display: flex;
+  padding: 1.5rem;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 1rem;
+  transition: 0.3s ease;
+  box-shadow: rgba(9, 30, 66, 0.01) 0px 1px 1px, rgba(9, 30, 66, 0.1) 0px 0px 1px 1px;
+}
+.midContainer .freeApps .appGridcard .aGridcard:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.05), 0px 2px 1px -1px rgba(0, 0, 0, 0.02), 0px 8px 3px 0px rgba(0, 0, 0, 0.01);
+}
+.midContainer .freeApps .appGridcard .aGridcard .bbItems p {
+  font-size: 1.3rem;
+}
+.midContainer .freeApps .appGridcard .aGridcard .topCardItem {
+  display: flex;
+  align-items: center;
+  gap: 1.9rem;
+}
+.midContainer .freeApps .appGridcard .aGridcard .topCardItem .bTopItems .rating {
+  display: flex;
+  align-items: center;
+}
+.midContainer .freeApps .appGridcard .aGridcard .topCardItem .bTopItems .rating svg {
+  width: 2rem;
+  margin-right: 0.5px;
+  color: #373F45;
+}
+.midContainer .freeApps .appGridcard .aGridcard .topCardItem .bTopItems .rating .ratingNo {
+  position: relative;
+  top: -1px;
+  padding-left: 5px;
+  font-size: 1.2rem;
+  color: grey;
+  font-weight: lighter;
+}
+.midContainer .freeApps .appGridcard .aGridcard .topCardItem .bTopItems h4 {
+  font-size: 1.4rem;
+  color: #333333;
+  padding-bottom: 0.5rem;
+}
+.midContainer .freeApps .appGridcard .aGridcard .topCardItem .bTopItems p {
+  font-size: 1.2rem;
+  color: grey;
+  font-weight: lighter;
+  padding-bottom: 1.1rem;
+}
+.midContainer .freeApps .appGridcard .aGridcard .topCardItem .cardImg {
+  width: 8rem;
+  height: 8rem;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.midContainer .freeApps .appGridcard .aGridcard .topCardItem .cardImg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.midContainer .freeApps .appHeadingAll {
+  margin: 4rem 0 !important;
+}
+.midContainer .freeApps .appHeading {
+  display: flex;
+  margin: 2rem 0;
+  justify-content: space-between;
+}
+.midContainer .freeApps .appHeading .leftHead {
+  display: flex;
+  align-items: center;
+}
+.midContainer .freeApps .appHeading .leftHead h3 {
+  color: #333333;
+  letter-spacing: 0.4px;
+}
+.midContainer .freeApps .appHeading .rightHead {
+  display: flex;
+  align-items: center;
+}
+.midContainer .freeApps .appHeading .rightHead .rotateN {
+  transition: all 0.3s ease;
+}
+.midContainer .freeApps .appHeading .rightHead .rotateY {
+  transform: rotate(180deg);
+  transition: all 0.3s ease;
+}
+.midContainer .freeApps .appHeading .rightHead .rightHeadBtn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  outline: none;
+  border: 1px solid transparent;
+  letter-spacing: 0.2px;
+  padding: 0.6rem 0.9rem;
+  width: 13rem;
+  color: #333333;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  background: transparent;
+}
+.midContainer .freeApps .appHeading .rightHead .rightHeadBtn:hover {
+  box-shadow: rgba(28, 28, 28, 0.07) 0px 0.42623px 1.85246px;
+  border: 1px solid rgb(232, 232, 232);
+  cursor: pointer;
+}
+.midContainer .freeApps .appHeading .rightHead .rightHeadBtn:focus {
+  background: #fff;
+  box-shadow: rgba(28, 28, 28, 0.07) 0px 0.42623px 1.85246px;
+  border: 1px solid rgb(232, 232, 232);
+}
+.midContainer .freeApps .appHeading .rightHead .rightHeadBtn:focus:hover {
+  background: transparent;
+}
+.midContainer .freeApps .appHeading .rightHead .rightHeadBtn span:first-child {
+  display: flex;
+  align-items: center;
+}
+.midContainer .freeApps .appHeading .rightHead .rightHeadBtn svg {
+  font-size: 1.8rem;
+}
+.midContainer .freeApps .appHeading .rightHead .rightHeadBtn svg:first-child {
+  margin-right: 0.5rem;
+}
+.midContainer .freeApps .appHeading .rightHead a {
+  color: #373F45;
+  font-size: 15px;
+  cursor: pointer;
+  line-height: 2rem;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  padding: 5px 5px;
+}
+.midContainer .freeApps .appHeading .rightHead a:hover {
+  background: #f3f3ed;
+}
+
+.appCard2 {
+  margin-top: -15rem;
+  flex-wrap: wrap !important;
+}
+
+.appCardAll {
+  display: grid !important;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: auto;
+  justify-content: space-between;
+  grid-column-gap: 1.6rem;
+}
+
+.appCard {
+  display: flex;
+}
+.appCard .aCards4 {
+  margin-top: 2.6rem;
+  width: 100% !important;
+  height: 46rem !important;
+}
+.appCard .aCardsMine {
+  margin-top: 2.6rem;
+  width: 100% !important;
+  height: 46rem !important;
+}
+.appCard .aCards5 {
+  margin-top: 2.6rem;
+  width: 100% !important;
+  height: 32rem !important;
+}
+.appCard .aCards6 {
+  margin-top: 2.6rem;
+  width: 22.5rem !important;
+  height: 32rem !important;
+}
+.appCard .aCards3 {
+  height: 32rem !important;
+}
+.appCard .aCards2 {
+  transition: 0.3s ease;
+  position: relative;
+  width: 17rem;
+  height: 38rem;
+  margin-left: 1.2rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.05), 0px 2px 1px -1px rgba(0, 0, 0, 0.02), 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+  border: 2px solid transparent;
+  border-radius: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.appCard .aCards2:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+  background: #fff;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.05), 0px 2px 1px -1px rgba(0, 0, 0, 0.02), 0px 8px 3px 0px rgba(0, 0, 0, 0.06);
+}
+.appCard .aCards2 .topCardItem2 {
+  height: 60% !important;
+}
+.appCard .aCards2 .topCardItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+}
+.appCard .aCards2 .topCardItem .cardImg4 {
+  width: 14rem !important;
+  height: 20rem !important;
+}
+.appCard .aCards2 .topCardItem .cardImg {
+  width: 10rem;
+  height: 10rem;
+  background: rgba(0, 0, 0, 0.06);
+  border-radius: 5px;
+  overflow: hidden;
+}
+.appCard .aCards2 .topCardItem .cardImg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.appCard .aCards2 .botCardItem2 {
+  height: 40% !important;
+}
+.appCard .aCards2 .botCardItem {
+  height: 50%;
+  padding: 0 1.4rem;
+  display: flex;
+  flex-direction: column;
+}
+.appCard .aCards2 .botCardItem .bbItems p {
+  font-size: 1.3rem;
+  position: absolute;
+  bottom: 1rem;
+}
+.appCard .aCards2 .botCardItem .bTopItems .rating {
+  display: flex;
+  align-items: center;
+}
+.appCard .aCards2 .botCardItem .bTopItems .rating svg {
+  width: 1.5rem;
+  margin-right: 0.5px;
+}
+.appCard .aCards2 .botCardItem .bTopItems .rating .ratingNo {
+  position: relative;
+  top: -1px;
+  padding-left: 5px;
+  font-size: 1.2rem;
+  color: grey;
+  font-weight: lighter;
+}
+.appCard .aCards2 .botCardItem .bTopItems h4 {
+  font-size: 1.3rem;
+  color: #333333;
+  padding-bottom: 0.9rem;
+  line-height: 1.5rem;
+}
+.appCard .aCards2 .botCardItem .bTopItems p {
+  font-size: 1.2rem;
+  color: grey;
+  font-weight: lighter;
+  padding-bottom: 1.1rem;
+}
+
+.gameCollection .collectionItem {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0 1.3rem;
+}
+
+.gameCard {
+  position: relative;
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+.gameCard img {
+  transition: all 0.2s ease-in;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.gameCard:hover img {
+  filter: blur(1.2rem);
+}
+.gameCard:hover .contentP {
+  display: block;
+}
+.gameCard:hover h2 {
+  transform: translateY(-20px);
+}
+.gameCard .cContent {
+  position: absolute;
+  bottom: 2.4rem;
+  padding-left: 2rem;
+}
+.gameCard .cContent h2 {
+  color: #fff;
+  font-weight: 500;
+  font-size: 2.2rem;
+  transition: all 0.2s ease;
+}
+.gameCard .cContent p {
+  color: #fff;
+  font-size: 1.2rem;
+  display: none;
+  transition: all 0.2s ease;
+}
+
+.sSection2 .sContainer {
+  margin-left: 70px;
+}
+.sSection2 .sContainer .sGallery2 {
+  width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-bottom-left-radius: 4rem;
+  border-bottom-right-radius: 4rem;
+  position: relative;
+}
+.sSection2 .sContainer .sGallery2 .cContent {
+  position: absolute;
+  top: 23rem;
+  padding-left: 3.5rem;
+}
+.sSection2 .sContainer .sGallery2 .cContent button {
+  margin-top: 2.9rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  outline: none;
+  width: 13rem;
+  height: 3.8rem;
+  color: #fff;
+  font-size: 1.4rem;
+  border-radius: 0.7rem;
+  transition: 0.3s;
+}
+.sSection2 .sContainer .sGallery2 .cContent button:hover {
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.3);
+}
+.sSection2 .sContainer .sGallery2 .cContent h2 {
+  color: #fff;
+  font-size: 2.6rem;
+  font-weight: 100;
+  letter-spacing: 0.6px;
+}
+.sSection2 .sContainer .sGallery2 .cContent p {
+  color: #fff;
+  font-size: 1.4rem;
+  max-width: 55rem;
+  letter-spacing: 0.6px;
+  padding-top: 1.2rem;
+  font-weight: lighter;
+}
+.sSection2 .sContainer .sGallery2 img {
+  width: 100%;
+  -webkit-mask-image: linear-gradient(to top, transparent 1%, black 50%);
+          mask-image: linear-gradient(to top, transparent 1%, black 50%);
+}
+
+.sGalleryI {
+  max-height: 100%;
+  overflow: hidden;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-bottom-left-radius: 10rem !important;
+  border-bottom-right-radius: 10rem !important;
+}
+.sGalleryI button {
+  background: rgba(77, 76, 76, 0.1) !important;
+}
+.sGalleryI button:hover {
+  background: rgba(167, 166, 166, 0.3) !important;
+}
+.sGalleryI img {
+  width: 100%;
+  height: 100%;
+  -webkit-mask-image: linear-gradient(to top, transparent 1%, black 20%) !important;
+          mask-image: linear-gradient(to top, transparent 1%, black 20%) !important;
+}
+
+.libContainer {
+  margin-bottom: 5rem;
+}
+.libContainer .libMain .libHeaderT {
+  padding: 2.7rem 0;
+}
+.libContainer .libMain .libHeaderT h3 {
+  font-size: 2.3rem;
+}
+.libContainer .libMain .libHeaderB {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.libContainer .libMain .libHeaderB .libRightC {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.libContainer .libMain .libHeaderB .libRightC:hover .tooltip {
+  opacity: 1;
+  pointer-events: auto;
+  top: -5rem;
+}
+.libContainer .libMain .libHeaderB .libRightC .tooltip {
+  position: absolute;
+  top: 0rem;
+  background: #4b4a4a;
+  font-size: 1.2rem;
+  color: #fff;
+  width: 13.6rem;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.libContainer .libMain .libHeaderB .libRightC .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 1rem;
+  width: 1rem;
+  bottom: -0.5rem;
+  left: 50%;
+  background: #4b4a4a;
+  transform: translateX(-50%) rotate(45deg);
+}
+.libContainer .libMain .libHeaderB .libRightC button {
+  background-color: #373F45;
+  padding: 0.8rem 1.4rem !important;
+  border-radius: 0.5rem !important;
+  font-size: 1.5rem;
+  color: #fff;
+  border: none;
+  outline: none;
+  z-index: 3;
+}
+.libContainer .libMain .libHeaderB .libRightC button:hover {
+  background-color: #326ab4;
+}
+.libContainer .libMain .libHeaderB .libLeftC h4 {
+  font-size: 1.6rem;
+  padding-bottom: 0.6rem;
+  color: #4b4a4a;
+}
+.libContainer .libMain .libHeaderB .libLeftC p {
+  font-size: 1.4rem;
+  letter-spacing: 0.4px;
+}
+
+.libFilter {
+  margin-top: 5.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.libFilter .filterRight {
+  padding: 1rem 0;
+}
+.libFilter .filterRight .filterItems {
+  margin-right: 0 !important;
+  border-radius: 0.7rem !important;
+  background-color: #fff !important;
+}
+.libFilter .filterLeft {
+  display: flex;
+  padding: 1rem 0;
+}
+.libFilter .filterItems {
+  margin-right: 1.1rem;
+}
+.libFilter .filterItems button {
+  border-radius: 1.7rem;
+  box-shadow: rgba(9, 30, 66, 0.01) 0px 1px 1px, rgba(9, 30, 66, 0.1) 0px 0px 1px 1px;
+  line-height: 2.5rem;
+  border: 0.1px solid #f9f9f9;
+  outline: none;
+  color: #111;
+  background: transparent;
+  padding: 0.2rem 2rem;
+  font-size: 1.5rem;
+}
+.libFilter .filterItems button:hover {
+  background-color: #f2f2f2;
+}
+.libFilter .filterItems button:focus {
+  border: 0.1px solid #373F45;
+}
+
+.filterAppContainer {
+  width: 100%;
+  height: 7rem;
+  background-color: #fff;
+  border-radius: 0.7rem;
+  box-shadow: rgba(9, 30, 66, 0.01) 0px 1px 1px, rgba(9, 30, 66, 0.1) 0px 0px 1px 1px;
+  margin-top: 1rem;
+  margin-bottom: 0.8rem;
+}
+.filterAppContainer:hover {
+  background-color: #f9f9f9;
+}
+.filterAppContainer .filterAppItems {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.filterAppContainer .filterAppItems .f1AppF1 {
+  flex: 1.3;
+}
+.filterAppContainer .filterAppItems .f1AppF2 {
+  flex: 1;
+}
+.filterAppContainer .filterAppItems .f1AppF3 {
+  flex: 1;
+}
+.filterAppContainer .filterAppItems .f1AppF4 {
+  flex: 1;
+  justify-content: end !important;
+}
+.filterAppContainer .filterAppItems .f1App {
+  display: flex;
+  height: 7rem;
+  align-items: center;
+}
+.filterAppContainer .filterAppItems .f1App .f1Dots {
+  margin: 0 1rem 0 1.8rem;
+}
+.filterAppContainer .filterAppItems .f1App .f1Dots button {
+  border: none;
+  outline: none;
+  padding: 3px 0;
+  background: transparent;
+}
+.filterAppContainer .filterAppItems .f1App .f1Dots button:hover {
+  background: #f3f3f3;
+  border-radius: 0.5rem;
+}
+.filterAppContainer .filterAppItems .f1App .f1Dots button svg {
+  width: 32px;
+  height: 21px;
+  opacity: 0.8;
+}
+.filterAppContainer .filterAppItems .f1App h4 {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.filterAppContainer .filterAppItems .f1App p {
+  font-size: 1.3rem;
+  padding: 0.3rem 0;
+  color: #767676;
+}
+.filterAppContainer .filterAppItems .f1App .f1Download {
+  line-height: 2.5rem;
+  border-radius: 0.7rem;
+  background-color: #fff;
+  box-shadow: rgba(9, 30, 66, 0.01) 0px 1px 1px, rgba(9, 30, 66, 0.1) 0px 0px 1px 1px;
+  border: 2px solid transparent;
+}
+.filterAppContainer .filterAppItems .f1App .f1Download:hover {
+  background-color: #f3f3f3;
+}
+.filterAppContainer .filterAppItems .f1App .f1Download a {
+  display: flex;
+  text-decoration: none;
+  color: #111;
+  padding: 0 4.5rem;
+  font-size: 1.5rem;
+}
+.filterAppContainer .filterAppItems .f1App .f1Download a svg {
+  opacity: 0.8;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.filterAppContainer .filterAppItems .f1App .f1Logo {
+  width: 4.9rem;
+  height: 4.9rem;
+  background-color: #f2f2f2;
+  border-radius: 0.5rem;
+  margin: 0 1rem;
+  overflow: hidden;
+}
+
+.colContainer {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: repeat(4, minmax(250px, 33rem));
+  grid-gap: 1.1rem;
+}
+
+.col {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  max-height: 33rem;
+  background: rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+}
+.col img {
+  transition: all 0.2s ease-in;
+}
+.col:hover img {
+  filter: blur(1.2rem);
+}
+.col:hover .contentP {
+  display: block;
+}
+.col:hover h2 {
+  transform: translateY(-20px);
+}
+.col .cContent {
+  position: absolute;
+  bottom: 2.4rem;
+  padding-left: 2rem;
+}
+.col .cContent h2 {
+  color: #fff;
+  font-weight: 500;
+  font-size: 2.2rem;
+  transition: all 0.2s ease;
+}
+.col .cContent p {
+  color: #fff;
+  font-size: 1.2rem;
+  display: none;
+  transition: all 0.2s ease;
+}
+
+.carItem {
+  position: absolute;
+  top: 23rem;
+  padding-left: 3.5rem;
+}
+.carItem .passCar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.carItem a {
+  text-decoration: none;
+}
+.carItem button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(175, 174, 174, 0.1);
+  border: none;
+  outline: none;
+  width: 13rem;
+  height: 3.8rem;
+  color: #fff;
+  font-size: 1.5rem;
+  border-radius: 0.7rem;
+  transition: 0.3s;
+}
+.carItem button:hover {
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.3);
+}
+.carItem .spanFree {
+  display: flex;
+  color: #fff;
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+}
+.carItem .passFree {
+  color: #fff;
+  padding-left: 1rem;
+  font-size: 1.4rem;
+}
+.carItem h4 {
+  color: #fff;
+  font-size: 4rem;
+  text-align: left;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+}
+.carItem p {
+  text-align: left;
+  color: rgb(205, 207, 209);
+  font-size: 1.6rem;
+  max-width: 55rem;
+  letter-spacing: 0.6px;
+  padding-top: 1.2rem;
+  font-weight: lighter;
+  margin-bottom: 2rem;
+}
+.carItem .xBoxPass2 {
+  background: #0f7b0f;
+  padding: 0.7rem 1rem;
+  font-size: 1.1rem;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  margin-bottom: 0 !important;
+  border-radius: 1.6rem;
+}
+
+.custom_dropdown {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.5rem 4rem;
+}
+.custom_dropdown .sPadding {
+  margin: 0 1.8rem;
+}
+.custom_dropdown .custom_Menu {
+  width: 33.3%;
+}
+.custom_dropdown .custom_Menu1 {
+  background-color: #b8c6db;
+  background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+  z-index: 2900;
+  width: 33.3%;
+  border-radius: 0.6rem;
+  padding: 0.7rem;
+}
+
+.item_Holder {
+  padding-top: 0.5rem;
+}
+
+.drop_item {
+  width: 100%;
+  padding: 0.6rem 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.6rem;
+}
+.drop_item span {
+  font-size: 1.5rem;
+  position: relative;
+}
+.drop_item:hover {
+  cursor: pointer;
+  background-color: #e9e6e6;
+}
+.drop_item:hover span::after {
+  content: "";
+  position: absolute;
+  background-color: #373F45;
+  height: 1.6rem;
+  width: 3px;
+  left: -11px;
+  border-radius: 3rem;
+  transition: 0.3s;
+}
+
+.cBg {
+  background-color: #e9e6e6;
+}
+
+.selectMain {
+  position: relative;
+}
+.selectMain .resetBtn {
+  position: absolute;
+  top: 85px;
+  left: 40px;
+  outline: none;
+  border: 1px solid rgb(232, 232, 232);
+  padding: 0.7rem 1rem;
+  color: #000000;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  box-shadow: rgba(28, 28, 28, 0.07) 0px 0.42623px 1.85246px;
+  background: transparent;
+}
+
+.custom_dropdown_selection {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  padding: 0.6rem 1rem;
+  box-shadow: rgba(28, 28, 28, 0.07) 0px 2.1px 1.85246px;
+  border: 1px solid rgb(232, 232, 232);
+  border-radius: 0.6rem;
+}
+.custom_dropdown_selection span {
+  display: flex;
+  color: #000000;
+}
+.custom_dropdown_selection svg {
+  font-size: 2.1rem;
+  font-weight: lighter;
+  color: #767676 !important;
+}
+
+.opNor {
+  opacity: 1;
+}
+
+.opEdit {
+  opacity: 0.6;
+}
+
+.dNone {
+  display: none;
+}
+
+.dBlock {
+  display: block;
+}
+
+.iTopbar {
+  width: 385px;
+  height: 2.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  background-color: #000000;
+}
+.iTopbar span {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.loginMain {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+}
+.loginMain .loginLeft {
+  order: 2;
+  padding: 4rem;
+  width: 385px;
+  height: 100vh;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.loginMain .loginLeft .imgG {
+  margin-bottom: 1.8rem;
+}
+.loginMain .loginLeft p {
+  margin-bottom: 1.9rem;
+}
+.loginMain .loginLeft .orContainer {
+  display: flex;
+  align-items: center;
+  padding: 24px;
+}
+.loginMain .loginLeft .orContainer span {
+  text-transform: none;
+  color: #9194a0;
+  font-size: 1.5rem;
+  line-height: 20px;
+  font-weight: 400;
+  padding: 0 16px;
+}
+.loginMain .loginLeft .orContainer .line {
+  border-top: 1px solid #9194a0;
+  flex: 1;
+}
+.loginMain .loginLeft h1 {
+  font-size: 3.6rem;
+  text-align: left;
+  margin-bottom: 1.8rem;
+}
+.loginMain .loginLeft .gLogin, .loginMain .loginLeft .gFree {
+  border-radius: 4px;
+  border: 1px solid #848484;
+  width: 100%;
+  padding: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.loginMain .loginLeft .gLogin:hover, .loginMain .loginLeft .gFree:hover {
+  background-color: #e4e7f0;
+}
+.loginMain .loginLeft .gFree {
+  background-color: #000000 !important;
+}
+.loginMain .loginLeft .gFree:hover {
+  background-color: #143fcd !important;
+}
+.loginMain .loginLeft .gPort {
+  margin-top: 2rem;
+  background-color: #143fcd !important;
+}
+.loginMain .loginLeft .gPort:hover {
+  background-color: #000000 !important;
+}
+.loginMain .loginLeft .gFree a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0.5rem;
+  font-size: 1.4rem;
+  letter-spacing: 0.06rem;
+}
+.loginMain .loginLeft .gLogin a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000000;
+}
+.loginMain .loginLeft .gLogin a span {
+  padding-left: 2rem;
+  font-size: 15px;
+}
+.loginMain .gFooter {
+  position: fixed;
+  bottom: 3rem;
+}
+.loginMain .cLinks {
+  display: flex;
+  gap: 2rem;
+}
+.loginMain .loginRight {
+  width: calc(100vw - 385px);
+  height: 100%;
+  order: 2;
+  background-image: url(../public/loginpage.jpg);
+  position: absolute;
+  left: 385px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}/*# sourceMappingURL=Games.module.css.map */
