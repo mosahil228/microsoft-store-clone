@@ -15,6 +15,7 @@ import router from 'next/router';
 const login = () => {
     
     
+    // eslint-disable-next-line react-hooks/rules-of-hooks
     const {userProfile,addUser,removeUser}=useAuthStore();
     if(userProfile){
         router.push("/gamestore")
@@ -56,16 +57,11 @@ const login = () => {
                         <div className={styles.gFooter}>
                             <p>Contact me!</p>
                             <div className={styles.cLinks}>
-                                <Link href="https://www.linkedin.com/in/mosahil228/">
+                                <Link href="https://www.linkedin.com/in/ritik-kumar-448753222/">
                                     <a target="_blank"> <Image src={iL} width={40} height={40} alt="git" /></a>
                                 </Link>
-                                <Link href="https://github.com/mosahil228">
-                                    <a target="_blank"><Image src={iG} width={40} height={40} alt="git" /></a>
-                                </Link>
-                                <Link href="https://www.instagram.com/sahillll._._/">
-                                    <a target="_blank"><Image src={iI} width={40} height={40} alt="git" /></a>
-                                </Link>
-                                <Link href="mailto: mosahil228@gmail.com">
+                              
+                                <Link href="mailto:ritikshm30@gmail.com">
                                     <a target="_blank"><Image src={iGm} width={40} height={40} alt="git" /></a>
                                 </Link>
                             </div>

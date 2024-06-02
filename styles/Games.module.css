@@ -1,5 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pushster&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pushster&family=Roboto:wght@100&display=swap");
+.loadingMenu {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.loadingMenu .loadingImg2 {
+  margin-top: 5rem;
+}
+
 .backN {
   display: none;
 }
@@ -58,13 +70,15 @@
 }
 .navbar .navItems h4 {
   font-weight: 100;
-  font-size: 1.4rem;
+  font-size: 14px;
   padding-left: 1.3rem;
   color: #111;
 }
 .navbar .rightNav {
   display: flex;
   align-items: center;
+  gap: 1rem;
+  cursor: pointer;
 }
 .navbar .rightNav a {
   text-decoration: none;
@@ -75,6 +89,11 @@
   cursor: pointer;
   border-radius: 4px;
   transition: all 0.2s ease;
+  display: flex;
+}
+.navbar .rightNav a img {
+  border-radius: 50%;
+  margin-right: 3rem;
 }
 .navbar .rightNav a:hover {
   background: #e9e9e6;
@@ -150,7 +169,7 @@
   content: "";
   position: absolute;
   background-color: #373F45;
-  height: 2.6rem;
+  height: 26px;
   width: 4px;
   left: 2px;
   border-radius: 3rem;
@@ -185,17 +204,17 @@
 }
 .sidebar .sideItems .leftItems .leftIcon2 {
   color: #373F45 !important;
-  font-size: 2.7rem !important;
+  font-size: 27px !important;
 }
 .sidebar .sideItems .leftItems .leftIcon4 {
   color: #373F45 !important;
 }
 .sidebar .sideItems .leftItems .leftIcon3 {
-  font-size: 2.7rem !important;
+  font-size: 27px !important;
 }
 .sidebar .sideItems .leftItems .leftIcon {
   color: grey;
-  font-size: 2.2rem;
+  font-size: 22px;
 }
 
 .mainContainer {
@@ -285,7 +304,7 @@
   transition: all 0.4s ease-in-out;
   background: #fff;
   opacity: 1;
-  height: 145px !important;
+  height: 145px;
   box-shadow: rgba(28, 28, 28, 0.07) 0px 0.42623px 1.85246px;
   border: 1px solid rgb(232, 232, 232);
   border-radius: 1rem;
@@ -477,6 +496,7 @@
 .midContainer .freeApps .appHeading .leftHead h3 {
   color: #333333;
   letter-spacing: 0.4px;
+  font-size: 19px;
 }
 .midContainer .freeApps .appHeading .rightHead {
   display: flex;
@@ -880,6 +900,8 @@
 .libFilter .filterLeft {
   display: flex;
   padding: 1rem 0;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 .libFilter .filterItems {
   margin-right: 1.1rem;
@@ -997,8 +1019,7 @@
 
 .colContainer {
   display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: repeat(4, minmax(250px, 33rem));
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 1.1rem;
 }
 
@@ -1225,7 +1246,7 @@
   align-items: center;
   position: fixed;
   top: 0;
-  background-color: #000000;
+  background-color: #000;
 }
 .iTopbar span {
   color: #fff;
@@ -1273,7 +1294,8 @@
   text-align: left;
   margin-bottom: 1.8rem;
 }
-.loginMain .loginLeft .gLogin, .loginMain .loginLeft .gFree {
+.loginMain .loginLeft .gLogin,
+.loginMain .loginLeft .gFree {
   border-radius: 4px;
   border: 1px solid #848484;
   width: 100%;
@@ -1283,21 +1305,28 @@
   align-items: center;
   cursor: pointer;
 }
-.loginMain .loginLeft .gLogin:hover, .loginMain .loginLeft .gFree:hover {
+.loginMain .loginLeft .gLogin:hover,
+.loginMain .loginLeft .gFree:hover {
   background-color: #e4e7f0;
 }
 .loginMain .loginLeft .gFree {
   background-color: #000000 !important;
 }
 .loginMain .loginLeft .gFree:hover {
-  background-color: #143fcd !important;
+  background-color: rgb(170, 255, 0) !important;
+}
+.loginMain .loginLeft .gFree:hover a {
+  color: #000 !important;
 }
 .loginMain .loginLeft .gPort {
   margin-top: 2rem;
   background-color: #143fcd !important;
 }
 .loginMain .loginLeft .gPort:hover {
-  background-color: #000000 !important;
+  background-color: #001f87 !important;
+}
+.loginMain .loginLeft .gPort:hover a {
+  color: #fff !important;
 }
 .loginMain .loginLeft .gFree a {
   text-decoration: none;
@@ -1334,4 +1363,344 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.resAppCard10 {
+  display: grid !important;
+  grid-template-columns: repeat(5, 1fr) !important;
+}
+
+.resAppCard11 {
+  display: grid !important;
+  grid-template-columns: repeat(5, 1fr) !important;
+}
+.resAppCard11 .aCards6 {
+  width: 100% !important;
+}
+
+@media (max-width: 1250px) {
+  .colContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .resAllGames {
+    grid-template-columns: repeat(4, 1fr) !important;
+  }
+  .resCardAll {
+    grid-template-columns: repeat(4, 1fr) !important;
+  }
+  .resCardAll .aCardsMine:nth-child(1) {
+    display: none !important;
+  }
+  .appCard .aCards3:nth-child(1) {
+    display: none !important;
+  }
+  .resAppCard10 {
+    grid-template-columns: repeat(4, 1fr) !important;
+  }
+}
+@media (max-width: 1020px) {
+  .freeApps .appGridcard {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .collectionItem {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .gameCard:nth-child(1) {
+    display: none !important;
+  }
+  .appCard .aCards2:nth-child(4) {
+    display: none !important;
+  }
+  .appCard .resAcards:nth-child(1) {
+    display: none !important;
+  }
+}
+@media (max-width: 950px) {
+  .carItem {
+    position: absolute;
+    top: 15rem;
+    padding-left: 3.5rem;
+  }
+  .midItems input {
+    width: 400px !important;
+  }
+  .resAppCard11 {
+    grid-template-columns: repeat(4, 1fr) !important;
+  }
+}
+@media (max-width: 860px) {
+  .resAllCard {
+    grid-template-columns: repeat(4, 1fr) !important;
+  }
+  .appCard .aCards3:nth-child(2) {
+    display: none !important;
+  }
+  .resAppCard10 {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+@media (max-width: 720px) {
+  .carItem h4 {
+    font-size: 2.8rem;
+  }
+  .appCard .aCards2:nth-child(3) {
+    display: none !important;
+  }
+  .appCard .resAcards:nth-child(2) {
+    display: none !important;
+  }
+  .midItems input {
+    width: 324px !important;
+    font-size: 11px !important;
+  }
+}
+@media (max-width: 660px) {
+  .collectionItem {
+    grid-template-columns: repeat(1, 1fr) !important;
+    grid-gap: 1.3rem 1.3rem !important;
+  }
+  .collectionItem .gameCard .cContent h2 {
+    font-size: 3.2rem !important;
+  }
+  .appCard .aCards3:nth-child(3) {
+    display: none !important;
+  }
+}
+@media (max-width: 620px) {
+  .resAllCard {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+  .midItems input {
+    width: 252px !important;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .appCard .aCards2:nth-child(2) {
+    display: none !important;
+  }
+  .resAppCard10 {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .resAppCard11 {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+@media (max-width: 760px) {
+  .filterRight {
+    width: 100%;
+  }
+  .filterRight .filterItems button {
+    width: 100%;
+  }
+  .libFilter {
+    flex-direction: column !important;
+  }
+  .filterAppContainer {
+    height: 13rem !important;
+  }
+  .filterAppItems {
+    position: relative;
+  }
+  .filterAppItems .f1AppF1, .filterAppItems .f1AppF2, .filterAppItems .f1AppF3 {
+    flex: none !important;
+  }
+  .filterAppItems .f1AppF3 {
+    margin-right: 1rem !important;
+  }
+  .filterAppItems .f1AppF4 {
+    position: absolute;
+    top: 47px;
+    width: 100%;
+  }
+  .filterAppItems .f1AppF4 .f1Download {
+    width: 100%;
+    margin-left: 2rem;
+  }
+  .filterAppItems .f1AppF4 .f1Download a {
+    justify-content: center;
+  }
+  .navItems h4 {
+    display: none;
+  }
+  .resAllGames {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+  .resCardAll {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+  .resCardAll .aCardsMine:nth-child(2) {
+    display: none !important;
+  }
+  .resAppCard10 {
+    margin-top: 0 !important;
+  }
+  .resAppCard11 {
+    margin-top: 0 !important;
+  }
+}
+@media (max-width: 600px) {
+  .colContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .filterCollapse .custom_Menu {
+    width: 38%;
+  }
+  .filterCollapse .custom_Menu1 {
+    width: 38%;
+  }
+  .activeCollapse {
+    height: 225px !important;
+  }
+  .activeCollapse .resetBtn {
+    top: 184px !important;
+  }
+  .activeCollapse .custom_Menu1 {
+    width: 38%;
+  }
+  .activeCollapse .custom_Menu {
+    width: 38%;
+  }
+  .activeCollapse .custom_dropdown {
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center !important;
+    padding: 2.5rem 0 !important;
+  }
+  .resAllGames {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .freeApps .appGridcard {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .appCard .resAcards:nth-child(3) {
+    display: none !important;
+  }
+  .resCardAll {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .sGallery2 .cContent {
+    top: 11rem !important;
+  }
+  .sGallery2 .cContent h2 {
+    font-size: 1.6rem !important;
+  }
+  .sGallery2 .cContent p {
+    font-size: 1rem !important;
+  }
+}
+@media (max-width: 520px) {
+  .libHeaderB {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+  .libHeaderB .libRightC {
+    margin-top: 4rem;
+  }
+  .filterAppItems .f1AppF3 {
+    display: none !important;
+  }
+  .filterAppItems .f1AppF2 {
+    margin-right: 1rem;
+  }
+  .resAllCard {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .carItem h4 {
+    font-size: 1.8rem;
+  }
+  .carItem p {
+    font-size: 1rem;
+  }
+  .collectionItem .gameCard .cContent h2 {
+    font-size: 2.5rem !important;
+  }
+  .essentialApps {
+    height: 31rem !important;
+  }
+  .midContainer .essentialApps2 {
+    height: 31rem !important;
+  }
+  .appCard .aCards2:nth-child(1) {
+    display: none !important;
+  }
+  .appCard {
+    gap: 0.5rem !important;
+  }
+  .appCard .resAcards:nth-child(4) {
+    display: none !important;
+  }
+  .sGallery2 img {
+    -webkit-mask-image: linear-gradient(to top, transparent 1%, black 27%);
+            mask-image: linear-gradient(to top, transparent 1%, black 27%);
+  }
+  .rightNav .rightUser {
+    display: none !important;
+  }
+  .carItem {
+    top: 11rem;
+  }
+  .carItem button {
+    width: 9rem;
+    height: 2.8rem;
+    font-size: 1rem;
+  }
+  .resCardAll {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .resCardAll .aCardsMine:nth-child(2) {
+    display: block !important;
+  }
+  .resAppCard11 {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+@media (max-width: 485px) {
+  .resCardAll {
+    grid-template-columns: repeat(2, 150px) !important;
+  }
+}
+@media (max-width: 430px) {
+  .resAllGames {
+    justify-items: center;
+  }
+  .resAllGames .topCardItem .cardImg {
+    background: none !important;
+  }
+  .resAllGames .aCards4 {
+    width: 136px !important;
+  }
+  .resCardAll {
+    grid-template-columns: repeat(2, 140px) !important;
+  }
+  .resAppCard10 {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+}
+@media (max-width: 415px) {
+  .resAllGames {
+    justify-items: center;
+  }
+  .resAllGames .aCards4 {
+    width: 128px !important;
+  }
+}
+@media (max-width: 400px) {
+  .carItem {
+    top: 7rem;
+  }
+  .midItems input {
+    width: 227px !important;
+  }
+  .resCardAll {
+    grid-template-columns: repeat(2, 120px) !important;
+  }
+}
+@media (max-width: 390px) {
+  .resAllGames {
+    justify-items: center;
+  }
+  .resAllGames .aCards4 {
+    width: 122px !important;
+  }
 }/*# sourceMappingURL=Games.module.css.map */
