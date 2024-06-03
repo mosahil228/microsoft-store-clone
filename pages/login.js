@@ -47,13 +47,7 @@ const login = () => {
                             
                         </div>
                         </Link>
-                        <div className={`${styles.gFree} ${styles.gPort}`}>
-                            <Link href="https://codewithsahil.netlify.app/">
-                                <a target="_blank">
-                                    My portfolio
-                                </a>
-                            </Link>
-                        </div>
+                       
                         <div className={styles.gFooter}>
                             <p>Contact me!</p>
                             <div className={styles.cLinks}>
